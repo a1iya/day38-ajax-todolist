@@ -1,0 +1,39 @@
+<h1>Emails#index</h1>
+	<p>Find me in app/views/emails/index.html.erb</p>
+	<div class="container">
+	    <div class="row">
+	        <div class="col-6" id="email_list">
+	            <ul>
+	                <%@emails.each do |email| %>
+	                    <li id="email_<%=email.id%>">
+	                        <%= link_to( email, {remote: true})   do%>
+                            <div style="display:flex">
+                              <div style="flex:0 0 auto;" class="pr-1">
+                                <% if email.read == false %>
+  	                                <i class="fa fa-envelope"></i>
+  	                            <% else %>
+  	                                <i class="fa fa-envelope-open"></i>
+  	                            <% end %>
+                              </div>
+                              <div style="flex:1 1 auto">
+                                <div class="row">
+                                    <div class="col-sm-5 nowrap">
+                                      <%= email.sender %>
+                                    </div>
+                                    <div class="col-sm-7 nowrap">
+                                        <%= email.object %>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+
+	                        <% end %>
+	                    </li>
+	                <%end%>
+	            </ul>
+	        </div>
+	        <div class="col-6" id="email_content">
+	            <h1>Cliquez sur un email pour voir son contenu</h1>
+	        </div>
+	    </div>
+	</div>

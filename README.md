@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Lien en prod : https://calm-temple-71368.herokuapp.com
 
-Things you may want to cover:
+## Projet : Mailer en AJAX (AJAX 2/2)
 
-* Ruby version
+Pour ce projet, il fallait faire un Email Viewer pour le projet ToDoList
+c'est à dire implémenter une page dans laquelle il y aura 2 colonnes :
 
-* System dependencies
+- une colonne avec la liste des emails
+- une colonne qui affiche le contenu de l'email sur lequel tu viens de cliquer
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Lien utile pour AJAX 1/2 (checklist) : https://github.com/darkdevilish/todo

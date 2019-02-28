@@ -1,3 +1,5 @@
 $('#email_content').empty();
 $('#email_content').append("<%= j render 'email', task: @email %>");
-$("#email_<%=@email.id%> span").removeClass();
+$('ul>li').removeClass('current');
+$("#email_<%=@email.id%>").addClass('current');
+$("#email_<%=@email.id%> i").removeClass('fa-envelope').addClass('fa-envelope-open');

@@ -1,8 +1,11 @@
 // Place all the styles related to the Emails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#email_list ul{padding-left:0}
 #email_list,#email_list li {list-style-type: none;padding:2px 10px;border-bottom: 1px #dedede solid}
 #email_list,#email_list li>a{width:100%;display:block}
 #email_list li:hover{background-color:#0098ee;color:#fff}
 #email_list li:hover>a{color:#fff;text-decoration: none}
 .nowrap {white-space: nowrap;overflow:hidden;text-overflow: ellipsis;}
+header {margin:0px 15px}
+li.current {background-color:#edf8ff;/*#eee*/}

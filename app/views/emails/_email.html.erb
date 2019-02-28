@@ -1,3 +1,4 @@
 <h1><%= @email.object %></h1>
+<small>From: <%= @email.sender %></small>
 	<p><%= @email.body %></p>
-	<%= link_to 'Delete', @email, method: :delete, data: { confirm: 'Are you sure?' }, remote: true %>  
+	<%= link_to '<i class="fa fa-trash"></i> Delete'.html_safe, @email, method: :delete, data: { confirm: 'Are you sure?' }, remote: true %>
